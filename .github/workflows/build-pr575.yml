@@ -31,8 +31,8 @@ jobs:
           build-args: |
             CMD=./cmd/rghc
           tags: |
-            ghcr.io/${{ github.repository_owner }}/rreading-glasses:hardcover-pr575
-            ghcr.io/${{ github.repository_owner }}/rreading-glasses:hardcover-${{ github.sha }}
+            ghcr.io/grimones/rreading-glasses:hardcover-pr575
+            ghcr.io/grimones/rreading-glasses:hardcover-${{ github.sha }}
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
             org.opencontainers.image.revision=${{ github.sha }}
