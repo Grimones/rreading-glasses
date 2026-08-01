@@ -29,7 +29,7 @@ jobs:
           platforms: linux/amd64
           # adjust to whatever the Dockerfile actually uses
           build-args: |
-            CMD=./cmd/rghc
+            RGPATH=./cmd/rghc
           tags: |
             ghcr.io/grimones/rreading-glasses:hardcover-pr575
             ghcr.io/grimones/rreading-glasses:hardcover-${{ github.sha }}
